@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+}
+
+h1, h2, p, a {
+  color: white;
+}
+
+/* Nav Bar Styles */
+.nav-bar {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.nav-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo {
+  width: 50px;
+}
+
+.nav-label {
+  font-weight: bold;
+}
+
+.nav-items {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-item {
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #159947;
+  transform: scale(1.1);
+}
+
+/* Section 1 Styles */
+#sectionOne {
+  font-family: 'Montserrat', sans-serif;
+  padding: 180px 80px 0px 80px;
+  background-image: url('/wave.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.welcome {
+  font-size: 15rem;
+  margin: 0;
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.arrow-down {
+  width: 45px;
+  padding-top: 220px;
+  display: block;
+  margin: 0 auto;
+  animation-name: point-down;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes point-down {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(8%);
+  }
+}
