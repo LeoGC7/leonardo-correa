@@ -1,0 +1,63 @@
+[
+    {
+        "title": "HTML",
+        "image": "/html.png",
+        "skills": [
+            "Semantic HTML",
+            "Accessibility (ARIA)",
+            "SEO best practices",
+            "Forms"
+        ]
+    },
+
+    {
+        "title": "CSS",
+        "image": "/css.png",
+        "skills": [
+            "Responsive Design",
+            "Flexbox & Grid",
+            "Mobile Web Apps",
+            "CSS Animations"
+        ]
+    },
+
+    {
+        "title": "JavaScript",
+        "image": "/javascript.png",
+        "skills": [
+            "DOM manipulation",
+            "Asynchronous programming (Promises, Async/Await)",
+            "ES6 features"
+        ]
+    },
+
+    {
+        "title": "React",
+        "image": "/react.png",
+        "skills": [
+            "Hooks",
+            "Component lifecycle",
+            "State management"
+        ]
+    },
+
+    {
+        "title": "Python",
+        "image": "/python.png",
+        "skills": [
+            "Flask Apps (Jinja Templating)",
+            "Basic Data Modeling",
+            "Familiarity with Backend"
+        ]
+    },
+
+    {
+        "title": "Dev Tools",
+        "image": "/dev-tools.png",
+        "skills": [
+            "Git & GitHub",
+            "Vite",
+            "Eslint & Prettier"
+        ]
+    }
+]
