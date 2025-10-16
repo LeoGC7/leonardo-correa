@@ -9,11 +9,13 @@ h1, h2, p, a {
 
 /* Nav Bar Styles */
 .nav-bar {
+  position: sticky;
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
+  background-color: #0a0a0a;
 }
 
 .nav-title {
@@ -137,13 +139,121 @@ h1, h2, p, a {
 .note {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem;
-  color: rgb(40, 40, 40);
+  color: rgb(66, 66, 66);
   text-align: center;
   margin-top: 3rem;
 }
 
 .code-link {
   color: #0d632e
+}
+
+/* Section 3 */
+#sectionThree {
+  margin-bottom: 5rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 5rem;
+  gap: 2rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #232323;
+  border-radius: 1rem;
+  width: 350px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  box-shadow: 0px 0px 10px 0px #21aa56;
+  transform: scale(1.02);
+}
+
+.project-image {
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.project-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  height: 220px;
+}
+
+.project-link {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  color:#159947;
+}
+
+.coming-soon {
+  font-family: 'Montserrat', sans-serif;
+  color:#159947;
+}
+
+/* Section 4 */
+#sectionFour {
+  margin-bottom: 5rem;
+}
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 15rem;
+}
+
+.about-image {
+  width: 450px;
+  border-radius: 50%;
+}
+
+.about-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.about-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.link-image {
+  width: 25px;;
+}
+
+.about-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+}
+
+.about-text strong {
+  color: #159947;
 }
 
 @keyframes point-down {
