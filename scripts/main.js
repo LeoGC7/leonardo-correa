@@ -1,7 +1,7 @@
 // This function returns an array of cards
 async function fetchCardsData() {
     try {
-        const response = await fetch('/scripts/cards.json');
+        const response = await fetch('https://leogc7.github.io/wdd231/cards.json');
 
         if (!response.ok) {
             throw new Error(`Response error: Status ${response.status}`)
