@@ -9,13 +9,17 @@ h1, h2, p, a {
 
 /* Nav Bar Styles */
 .nav-bar {
-  position: sticky;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
   background-color: #0a0a0a;
+  z-index: 1000;
+  
 }
 
 .nav-title {
@@ -49,6 +53,10 @@ h1, h2, p, a {
 
 .mobile-nav-bar {
   display: none;
+}
+
+main {
+  padding-top: 5rem;
 }
 
 /* Section 1 Styles */
