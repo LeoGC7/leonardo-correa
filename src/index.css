@@ -47,6 +47,10 @@ h1, h2, p, a {
   transform: scale(1.1);
 }
 
+.mobile-nav-bar {
+  display: none;
+}
+
 /* Section 1 Styles */
 #sectionOne {
   font-family: 'Montserrat', sans-serif;
@@ -207,6 +211,7 @@ h1, h2, p, a {
 }
 
 .coming-soon {
+  width: 350px;
   font-family: 'Montserrat', sans-serif;
   color:#159947;
 }
@@ -343,6 +348,7 @@ h1, h2, p, a {
   background-color: #0d632e;
 }
 
+/* Key frames */
 @keyframes point-down {
   from {
     transform: translateY(0%);
@@ -351,4 +357,21 @@ h1, h2, p, a {
   to {
     transform: translateY(8%);
   }
+}
+
+/* Animation */
+.section-to-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.section-to-animate.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#sectionOne {
+    opacity: 1; 
+    transform: translateY(0);
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>leonardo-correa</title>
     <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="/src/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -21,21 +22,38 @@
         <a href="#sectionTwo" class="nav-item">Skills</a>
         <a href="#sectionThree" class="nav-item">Projects</a>
         <a href="#sectionFour" class="nav-item">About Me</a>
-        <a href="#" class="nav-item">Contact</a>
+        <a href="#sectionFive" class="nav-item">Contact</a>
       </div>
     </nav>
+
+    <!-- Mobile Nav Bar -->
+    <nav class="mobile-nav-bar">
+      <div class="nav-title">
+        <img src="/dev-logo.png" alt="logo" class="nav-logo">
+        <p class="nav-label">Leonardo Correa</p>
+      </div>
+      <button class="mobile-nav-button" id="mobileButton">&#8801</button>
+    </nav>
+
+    <div class="mobile-nav-items" id="mobileNavItems" style="display: none;">
+      <a href="#" class="mobile-nav-item">Home</a>
+      <a href="#sectionTwo" class="mobile-nav-item">Skills</a>
+      <a href="#sectionThree" class="mobile-nav-item">Projects</a>
+      <a href="#sectionFour" class="mobile-nav-item">About Me</a>
+      <a href="#sectionFive" class="mobile-nav-item">Contact</a>
+    </div>
 
     <!-- Main Content -->
     <main>
       <!-- Section 1 -->
-      <section id="sectionOne">
+      <section id="sectionOne" class="section-to-animate">
         <h1 class="welcome">Welcome</h1>
         <p class="welcome-text">I'm a frontend developer building fast, responsive, and beautiful web applications</p>
         <img src="/arrow-down.png" alt="arrow-down" class="arrow-down">
       </section>
 
       <!-- Section 2 -->
-      <section id="sectionTwo">
+      <section id="sectionTwo" class="section-to-animate">
         <div class="section-title-container">
           <h2 class="section-title">Skills</h2>
         </div>
@@ -44,7 +62,7 @@
       </section>
 
       <!-- Section 3 -->
-      <section id="sectionThree">
+      <section id="sectionThree" class="section-to-animate">
         <div class="section-title-container">
           <h2 class="section-title">Projects</h2>
         </div>
@@ -67,12 +85,18 @@
               <p class="project-desc">A photography agency landing page. The site features a fully integrated E-Commerce platform for various products, a dynamic portfolio showcase, clear service offerings display, and seamless client interaction via WhatsApp redirect.</p>
               <p class="project-link">Click to see</p>
             </a>
+            <a class="project" href="https://github.com/LeoGC7/Aspen-Upload-System" target="_blank">
+              <img src="/project-4.png" alt="project-image" class="project-image">
+              <p class="project-title">Aspen Upload System</p>
+              <p class="project-desc">A secure, multi-user full-stack file management system. It features user-specific dashboards and unique public links for seamless, external file uploads. All files uploaded via a user's unique link are instantly displayed on their private dashboard.</p>
+              <p class="project-link">Click to see</p>
+            </a>
             <p class="coming-soon">More projects in development...</p>
           </div>
       </section>
 
       <!-- Section 4 -->
-      <section id="sectionFour">
+      <section id="sectionFour" class="section-to-animate">
         <div class="section-title-container">
           <h2 class="section-title">About Me</h2>
         </div>
@@ -101,7 +125,7 @@
       </section>
 
       <!-- Section 5 -->
-       <section id="sectionFive">
+       <section id="sectionFive" class="section-to-animate">
           <div class="section-title-container">
             <h2 class="section-title">Contact</h2>
           </div>

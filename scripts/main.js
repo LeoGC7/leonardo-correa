@@ -77,4 +77,45 @@ async function renderCards() {
     }
 }
 
+// This function toggles the mobile nav items
+const mobileButton = document.getElementById('mobileButton');
+const mobileNavItem = document.getElementById('mobileNavItems');
+
+function toggleNavItems() {
+    if (mobileNavItem.style.display == 'none') {
+        mobileNavItem.style.display = 'flex'
+    } else {
+        mobileNavItem.style.display = 'none'
+    }
+}
+
+mobileButton.addEventListener('click', toggleNavItems)
+
+// This function animates the sections on the HTML
+const handleIntersection = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            
+            observer.unobserve(entry.target);
+        }
+    });
+};
+
+const observerOptions = {
+    root: null, 
+    rootMargin: '0px', 
+    threshold: 0.1,
+};
+
+const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+const sectionsToAnimate = document.querySelectorAll('.section-to-animate');
+
+sectionsToAnimate.forEach(section => {
+    if (section.id !== 'sectionOne') {
+        observer.observe(section);
+    }
+});
+
 renderCards()
